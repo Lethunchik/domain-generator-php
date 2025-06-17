@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form>div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#loading {
+    display: none;
+    margin: 20px 0;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.error {
+    color: #dc3545;
+    font-weight: bold;
+    padding: 10px;
+    background: #f8d7da;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+#resultContainer {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.domains-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.domains-table th,
+.domains-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.domains-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.domains-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.action-btn {
+    padding: 8px 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.action-btn:hover {
+    background: #218838;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
